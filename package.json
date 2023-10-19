@@ -1,0 +1,52 @@
+{
+  "name": "rfleet-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "prettier": "prettier --write \"./src/**/*.{ts,tsx,html,md}\""
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@types/react-scroll": "^1.8.7",
+    "autoprefixer": "10.4.15",
+    "clsx": "^2.0.0",
+    "next": "13.4.19",
+    "next-videos": "^1.4.1",
+    "postcss": "8.4.29",
+    "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
+    "react-scroll-parallax": "^3.4.2",
+    "react-select": "^5.7.4",
+    "react-tooltip": "^5.21.4",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
+    "three": "^0.156.1",
+    "tw-elements": "^1.0.0-beta3",
+    "typescript": "5.2.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/three": "^0.155.1",
+    "@types/topojson": "^3.2.3",
+    "@types/uuid": "^9.0.3",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  }
+}
