@@ -2,6 +2,8 @@
 
 ![rFLEET Chatbot](./public/screenshots/02.png)
 
+![rFLEET RFQ TOOL](./public/screenshots/03.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
