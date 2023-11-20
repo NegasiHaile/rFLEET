@@ -1,8 +1,9 @@
 'use client'
 
-import { isMobile } from 'react-device-detect'
 import { ParallaxBanner } from 'react-scroll-parallax'
 import { Tooltip } from 'react-tooltip'
+
+import Link from 'next/link'
 
 import gradientCard from '@assets/images/gradient-card-cyan-indigo-to-r.png'
 import wave from '@assets/images/particle-wave.png'
@@ -13,17 +14,19 @@ import { Title } from '@components/ui/Typography'
 export const LoginPortalSection = () => {
   return (
     <section className="relative bg-[#00010c] text-white">
-      <div className="absolute xl:left-0 lg:-left-[20%] -left-[60%] lg:-top-[20%]">
-        <div
-          className="absolute w-[1200px] h-[1200px]"
-          style={{
-            background: `radial-gradient(600px 600px at center, #191D8840 ,#191D8880, #191D8800)`
-          }}
-        />
-        <div
-          className="absolute w-[1200px] h-[1200px]"
-          style={{ background: `url(${wireframeGlobe.src}) no-repeat 300px 350px` }}
-        />
+      <div className="relative container lg:block hidden">
+        <div className="absolute lg:left-[-300px] lg:top-[-230px] left-[-320px] top-[-200px]">
+          <div
+            className="absolute w-[1200px] h-[1200px]"
+            style={{
+              background: `radial-gradient(600px 600px at center, #191D8840 ,#191D8880, #191D8800)`
+            }}
+          />
+          <div
+            className="absolute w-[1200px] h-[1200px]"
+            style={{ background: `url(${wireframeGlobe.src}) no-repeat 300px 350px` }}
+          />
+        </div>
       </div>
       <ParallaxBanner className="parallax-banner" layers={[{ image: wave.src, speed: -20 }]}>
         <div className="relative container lg:grid block grid-cols-2">
@@ -32,16 +35,12 @@ export const LoginPortalSection = () => {
           </div>
           <div className="flex flex-col lg:items-end items-center lg:py-[128px] py-[90px]">
             <div className="flex flex-col react-tooltip-portal-help-container">
-              <div className="flex justify-start">
+              <div className="flex justify-center">
                 <Title>LOGIN PORTAL</Title>
               </div>
               <GradientCard>
-                <div className="text-body-xl font-semi lg:mb-[24px] mb-[18px]">
-                  ACCESS
-                  <br className="only-desktop" />
-                  SHIPPING PORTAL
-                </div>
-                <div className="text-gray-200 lg:mb-[12px] mb-[8px]">
+                <div className="text-body-xl font-semi lg:mb-[16px] mb-[12px]">ACCESS SHIPPING PORTAL</div>
+                <div className="text-gray-200 lg:mb-[24px] mb-[18px]">
                   Quote, Ship, Track, Manage Work Orders,
                   <br className="only-desktop" />
                   Carrier Relationships, Multi-Warehouses, and
@@ -52,7 +51,7 @@ export const LoginPortalSection = () => {
                   </a>
                   <Tooltip
                     anchorSelect="#help-shiping-portal"
-                    place={isMobile ? 'top-start' : 'top-end'}
+                    place="top-start"
                     style={{
                       backgroundColor: '#6957F2',
                       color: 'white',
@@ -67,14 +66,12 @@ export const LoginPortalSection = () => {
                     Delivery Operators.
                   </Tooltip>
                 </div>
-                <TransparentButton>LOGIN</TransparentButton>
+                <Link href="/signup">
+                  <TransparentButton>Login</TransparentButton>
+                </Link>
               </GradientCard>
               <GradientCard>
-                <div className="text-body-xl font-semi lg:mb-[24px] mb-[18px]">
-                  ACCESS
-                  <br className="only-desktop" />
-                  CARRIER PORTAL
-                </div>
+                <div className="text-body-xl font-semi lg:mb-[24px] mb-[18px]">ACCESS CARRIER PORTAL</div>
                 <div className="text-gray-200 lg:mb-[12px] mb-[8px]">
                   Efficiently Manage Trucks, Drivers, Bids, and
                   <br className="only-desktop" />
@@ -102,7 +99,9 @@ export const LoginPortalSection = () => {
                     Vessels, and Airlines
                   </Tooltip>
                 </div>
-                <TransparentButton>LOGIN</TransparentButton>
+                <Link href="/signup">
+                  <TransparentButton>Login</TransparentButton>
+                </Link>
               </GradientCard>
             </div>
           </div>

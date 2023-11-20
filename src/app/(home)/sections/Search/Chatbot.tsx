@@ -26,12 +26,6 @@ export const Chatbot = () => {
       createdAt: `Today `
     },
     {
-      bot: false,
-      avatar: false,
-      text: `I think I found a issue!`,
-      createdAt: `Today `
-    },
-    {
       bot: true,
       avatar: true,
       text: `Of course! I'd be happy to help you track your parcel.
@@ -44,15 +38,15 @@ export const Chatbot = () => {
   return (
     <>
       <div className="border-b border-[#FFFFFF20]">
-        <div className="flex justify-center lg:py-[24px] py-[18px]">
+        <div className="flex justify-center lg:py-[20px] py-[15px]">
           <div className="flex font-bold">
             <h4 className="text-primary">rFLEET.ai</h4>&nbsp;
             <h4>chatbot</h4>
           </div>
         </div>
       </div>
-      <div className="lg:pt-[30px] pt-[22px] lg:pb-[40px] pb-[30px] lg:px-[40px] px-[30px] lg:py-[40px] py-[30px]">
-        <div className="flex flex-col lg:gap-[16px] gap-[12px] lg:mb-[24px] mb-[18px]">
+      <div className="lg:pt-[20px] pt-[15px] lg:pb-[32px] pb-[24px] lg:px-[40px] px-[30px] lg:py-[40px] py-[30px]">
+        <div className="flex flex-col gap-d-12 lg:mb-[16px] mb-[12px]">
           {messages.map((message, index) => (
             <Message
               key={index}
@@ -63,8 +57,8 @@ export const Chatbot = () => {
             />
           ))}
           <div className="flex flex-col lg:gap-[8x] gap-[6px]">
-            <div className="text-caption-sm">Suggestions</div>
-            <div className="flex lg:gap-[16px] gap-[12px] overflow-x-hidden">
+            <div className="text-input">Suggestions</div>
+            <div className="flex gap-d-16 overflow-x-hidden">
               <div className="whitespace-nowrap bg-gradient-for-chatbot-message lg:px-[16px] px-[12px] lg:py-[10px] py-[8px] lg:rounded-[10px] rounded-[10px]">
                 Quote 2 pallets from Cleveland, OH to Los Angeles, CA?
               </div>
@@ -77,7 +71,7 @@ export const Chatbot = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between lg:gap-[12px] gap-[8px] bg-white lg:rounded-[16px] rounded-[12px] lg:pl-[24px] pl-[18px] lg:pr-[16px] pr-[12px] lg:py-[14px] py-[10px]">
+        <div className="flex justify-between gap-d-12 bg-white lg:rounded-[16px] rounded-[12px] lg:pl-[24px] pl-[18px] lg:pr-[16px] pr-[12px] lg:py-[14px] py-[10px]">
           <input
             type="text"
             className="grow lg:text-[14px] text-[10px] text-[#47464A] placeholder:text-[#84818A]"
@@ -106,7 +100,7 @@ const Message = ({ bot, text, createdAt, avatar = false }: MessageProps) => {
 
       <div
         className={cn(
-          'bg-gradient-for-chatbot-message flex lg:gap-[22px] gap-[16px] lg:max-w-[510px] lg:p-[12px] p-[8px] text-caption-sm',
+          'bg-gradient-for-chatbot-message flex lg:gap-[22px] gap-[16px] lg:max-w-[510px] lg:p-[12px] p-[8px] text-input',
           bot
             ? 'lg:rounded-tl-[10px] rounded-tl-[8px] lg:rounded-r-[10px] rounded-r-[8px] border border-[#FFFFFF30]'
             : 'lg:rounded-tr-[10px] rounded-tr-[8px] lg:rounded-l-[10px] rounded-l-[8px]'
@@ -116,7 +110,7 @@ const Message = ({ bot, text, createdAt, avatar = false }: MessageProps) => {
           {bot && <div>Chatbot</div>}
           <div>{text}</div>
         </div>
-        <div className="flex items-end text-caption-xs text-[#FFFFFF50]">{createdAt}</div>
+        <div className="flex items-end text-caption text-[#FFFFFF50]">{createdAt}</div>
       </div>
     </div>
   )

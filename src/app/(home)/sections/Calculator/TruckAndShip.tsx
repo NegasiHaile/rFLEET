@@ -7,7 +7,7 @@ import truck from '@assets/images/truck.png'
 
 export const TruckAndShip = () => {
   return (
-    <div className="flex justify-between items-end mt-[-120px]">
+    <div className="flex justify-between items-end">
       <Parallax translateX={[-16, 2]} translateY={[9, 2]} scale={[0.8, 1]}>
         <img src={truck.src} alt="" />
       </Parallax>

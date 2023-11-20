@@ -1,14 +1,19 @@
+import Link from 'next/link'
+
+import bgCurveStripes from '@assets/images/bg-curve-stripes.png'
 import { BRD } from '@components/ui/BRD'
+import { Button } from '@components/ui/Button'
 import { Title } from '@components/ui/Typography'
 
 export const AboutSection = () => {
   return (
-    <section className="lg:py-[130px] py-[100px] bg-[#191a4c] text-white">
-      <div className="container text-center lg:mb-[72px] mb-[54px]">
-        <div className="flex justify-center lg:mb-[26px] mb-[20px]">
-          <Title>About Us</Title>
+    <section className="relative lg:pt-[90px] pt-[70px] lg:pb-[120px] pb-[90px] bg-[#191a4c] text-white overflow-hidden">
+      <img className="absolute lg:block hidden left-[0] top-[0px] z-[1]" src={bgCurveStripes.src} />
+      <div className="relative z-[2] container text-center lg:mb-[48px] mb-[36px]">
+        <div className="flex justify-center lg:mb-[16px] mb-[10px]">
+          <Title>ABOUT US</Title>
         </div>
-        <div className="text-body-xl lg:mb-[62px] mb-[46px]">
+        <div className="text-body-lg lg:mb-[48px] mb-[36px]">
           At rFleet Inc., we unite shippers, carriers, sellers, and buyers in a<BRD />
           decentralized ecosystem, cultivating collaboration across the supply
           <BRD />
@@ -18,9 +23,11 @@ export const AboutSection = () => {
           <BRD />
           transforming the industry, forging a better way to do business.
         </div>
-        <button className="hover-bg-white-glow lg:w-auto w-full lg:px-[80px] px-[60px] lg:py-[15px] py-[12px] border border-solid border-gray-200 lg:text-[20px] text-[15px] font-semibold rounded-md bg-[#2F80ED] hover:bg-[#4796fd] transition duration-300">
-          LEARN MORE
-        </button>
+        <div className="flex justify-center">
+          <Link href="/signin" className="hover:text-white">
+            <Button className="lg:w-[250px] w-full">Login</Button>
+          </Link>
+        </div>
       </div>
       <div className="container">
         <div className="relative">
@@ -46,8 +53,9 @@ interface CardProps {
 }
 
 const Card = ({ children }: CardProps) => (
-  <div className="cursor-default group text-center lg:px-[32px] px-[24px] lg:py-[30px] py-[24px] bg-[#191a4c] hover:bg-gradient-card">
-    <h4 className="font-[500] lg:mb-[15px] mb-[13px]">{children[0]}</h4>
-    <div className="text-body-lg text-gray-400 group-hover:text-white">{children[1]}</div>
+  <div className="relative cursor-default group text-center lg:px-[32px] px-[24px] lg:py-[30px] py-[24px] bg-[#191a4c]">
+    <div className="absolute z-[2] group-hover:bg-gradient-card w-full h-full left-0 top-0"></div>
+    <h4 className="relative z-[3] font-medium lg:mb-[15px] mb-[13px]">{children[0]}</h4>
+    <div className="relative z-[3] text-body-lg text-gray-400 group-hover:text-white">{children[1]}</div>
   </div>
 )

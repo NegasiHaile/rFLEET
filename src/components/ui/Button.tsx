@@ -8,8 +8,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   className?: string
   full?: boolean
-  color?: 'primary' | 'light' | 'red' | 'transparent'
-  size?: 'sm' | 'md'
+  color?: 'primary' | 'transparent'
+  size?: 'md' | 'sm'
   glossy?: boolean
 }
 
@@ -17,67 +17,44 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, className, disabled, glossy = false, color = 'primary', size = 'md', full = false, ...props }, ref) => {
     const colorConfig = {
       primary: {
-        bgColor: 'before:bg-primary',
-        textColor: 'text-white'
-      },
-      light: {
-        bgColor: 'before:bg-primary/10',
-        textColor: 'text-primary'
-      },
-      red: {
-        bgColor: 'before:bg-red-400',
-        textColor: 'text-white'
-      },
-      green: {
-        bgColor: 'before:bg-green-400',
-        textColor: 'text-white'
-      },
-      blue: {
-        bgColor: 'before:bg-blue-400',
-        textColor: 'text-white'
-      },
-      yellow: {
-        bgColor: 'before:bg-yellow-400',
+        bgColor: 'bg-primary',
         textColor: 'text-white'
       },
       transparent: {
-        bgColor: 'before:bg-transparent before:border-2 before:border-solid before:border-white',
+        bgColor: 'bg-transparent border-white',
         textColor: 'text-white'
       }
     }
 
     const sizeConfig = {
-      sm: { padding: 'px-[24px] py-[14px] lg:px-[32px] lg:py-[18px]', font: 'text-[15px]' },
-      md: { padding: 'px-[36px] h-[46px] lg:px-[50px] lg:h-[62px]', font: 'text-lg' }
+      md: {
+        padding: 'lg:px-[28px] lg:py-[14px] px-[21px] py-[10px]',
+        font: 'lg:text-[14px] text-[12px] leading-[20px]'
+      },
+      sm: {
+        padding: 'lg:px-[16px] lg:py-[10px] px-[12px] py-[8px]',
+        font: 'lg:text-[14px] text-[12px] leading-[20px]'
+      }
     }
 
     const { bgColor, textColor } = colorConfig[color]
     const { padding, font } = sizeConfig[size]
 
+    const defaultClass =
+      'relative flex items-center justify-center border-2 border-solid border-transparent rounded-md transition duration-300 font-semibold'
     const width = full ? 'w-full' : ''
-    const hoverActive = disabled
-      ? ''
-      : 'hover:before:scale-[1.03] active:before:scale-[0.97] hover:after:blur-md active:after:blur-none active:after:bg-transparent'
+    const hover = disabled ? '' : 'hover:bg-[#4AED5200] hover:shadow-button-lg hover:border-green'
+    const border_shadow = glossy ? 'shadow-button border-green' : ''
+    const opacity = disabled ? 'opacity-50' : ''
 
     return (
       <button
         ref={ref}
         disabled={disabled}
-        className={cn(
-          'relative flex items-center justify-center before:absolute before:inset-0 before:rounded-md before:transition before:duration-300 active:duration-75 font-semibold',
-          className,
-          width,
-          bgColor,
-          padding,
-          hoverActive,
-          glossy
-            ? 'before:z-[1] before:border-2 before:border-solid before:border-primary-green after:z-0 after:bg-primary-green after:blur-sm after:absolute after:inset-0 after:rounded-md after:transition after:duration-300'
-            : '',
-          disabled ? 'opacity-50' : ''
-        )}
+        className={cn(defaultClass, width, bgColor, font, textColor, padding, hover, border_shadow, opacity, className)}
         {...props}
       >
-        <span className={cn('relative z-[2]', textColor, font)}>{children}</span>
+        {children}
       </button>
     )
   }
@@ -87,7 +64,7 @@ export const TransparentButton = React.forwardRef<HTMLButtonElement, React.Butto
   (props, ref) => (
     <button
       ref={ref}
-      className="hover-bg-green-glow w-full lg:px-[30px] px-[26px] lg:py-[15px] py-[12px] border border-solid border-gray-200 lg:text-[20px] text-[15px] font-semi rounded-md hover:bg-[#ffffff20] transition duration-300 font-semibold"
+      className="hover-bg-green-glow w-full lg:px-[18px] lg:py-[12px] px-[13px] py-[9px] border border-solid border-gray-200 text-input font-medium rounded-md hover:bg-[#ffffff20] transition duration-300"
       {...props}
     >
       {props.children}

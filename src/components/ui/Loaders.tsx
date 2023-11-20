@@ -1,5 +1,7 @@
 'use client'
 
+import globeGlow from '@assets/images/globe-glow.png'
+
 interface Props {
   text?: string
 }
@@ -46,6 +48,21 @@ export const ScreenLoader = ({ text }: Props) => (
         />
       </svg>
       <div>{text}</div>
+    </div>
+  </div>
+)
+
+export const GlobeLoader = ({ text }: Props) => (
+  <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-screen h-screen backdrop-blur">
+    <div className="flex flex-col items-center gap-2 w-44">
+      <img src={globeGlow.src} alt="airplane" className="shadow-[#69EACB]" />
+
+      <div className="w-full h-2 bg-gray-300 rounded-full">
+        <div
+          className="h-full bg-gradient-to-r from-[#69EACB]  via-[#EACCF8] to-[#6654F1] rounded-full"
+          id="progress-bar"
+        ></div>
+      </div>
     </div>
   </div>
 )

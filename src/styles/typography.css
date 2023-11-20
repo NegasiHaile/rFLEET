@@ -39,19 +39,15 @@
     @apply lg:text-[18px] text-[13px] lg:leading-[28px] leading-[21px];
   }
 
-  .text-input-leading {
+  .text-heading {
     @apply lg:text-[16px] text-[12px] lg:leading-[24px] leading-[18px];
   }
 
-  .text-input-text {
+  .text-input {
     @apply lg:text-[14px] text-[10px] lg:leading-[20px] leading-[15px];
   }
 
-  .text-caption-sm {
-    @apply lg:text-[14px] text-[10px] lg:leading-[20px] leading-[15px];
-  }
-
-  .text-caption-xs {
+  .text-caption {
     @apply lg:text-[12px] text-[9px] lg:leading-[16px] leading-[12px];
   }
 }
