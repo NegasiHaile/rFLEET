@@ -87,7 +87,7 @@ export const CompanyInfo = ({ onClose, onSubmit, form }: Props) => {
               <Controller
                 name="isCarrier"
                 control={control}
-                defaultValue={false}
+                defaultValue={true}
                 render={({ field }) => (
                   <Check
                     label={
@@ -130,7 +130,7 @@ export const CompanyInfo = ({ onClose, onSubmit, form }: Props) => {
                   <Input
                     type="date"
                     label="Date Established On*"
-                    labelClassName="text-[15px]  mt-[8px]"
+                    labelClassName="text-[15px] mt-[8px]"
                     placeholder="MM-DD-YYYY"
                     error={errors.dateEstablished?.message}
                     {...field}
@@ -175,7 +175,7 @@ export const CompanyInfo = ({ onClose, onSubmit, form }: Props) => {
                         control={control}
                         render={({ field: field1 }) => (
                           <Check
-                            label={<div className="">Company DTO#</div>}
+                            label={<div className="">Company DOT</div>}
                             {...field1}
                             checked={watch('hasCompanyDOT')}
                           />

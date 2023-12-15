@@ -75,8 +75,6 @@ export const From = ({ methods, onSubmit }: Props) => {
 
       const data = await response.json()
 
-      console.log('data', data)
-
       if (data[0].status === 'verified') {
         setValue('fromCountry', data[0].normalizedAddress.countryCode, { shouldValidate: true })
         setValue('fromCity', data[0].normalizedAddress.cityLocality, { shouldValidate: true })
@@ -124,7 +122,7 @@ export const From = ({ methods, onSubmit }: Props) => {
             />
           </div>
 
-          {/* <div>
+          <div>
             <div className="text-input font-semibold text-gray-200 lg:mb-[8px] mb-[6px]">City</div>
             <Input
               value={watch('fromCity')}
@@ -132,7 +130,7 @@ export const From = ({ methods, onSubmit }: Props) => {
               placeholder="Enter the City"
               error={errors.fromCity?.message}
             />
-          </div> */}
+          </div>
           <div>
             <div className="text-input font-semibold text-gray-200 lg:mb-[8px] mb-[6px]">Postal Code</div>
             <Input

@@ -70,9 +70,11 @@ export const CompanyInfo = ({ onClose, onSubmit }: Props) => {
               <Check
                 label={
                   <div className="font-semibold flex gap-2 items-center">
-                    Shipper/vendor <BiSolidInfoCircle className="text-lg" />
+                    Shipper / Manufacturer / Vender
+                    <BiSolidInfoCircle className="text-lg" />
                   </div>
                 }
+                checked={true}
               />
             </div>
             <Select
@@ -89,7 +91,7 @@ export const CompanyInfo = ({ onClose, onSubmit }: Props) => {
               <Input label="Date Established on*" labelClassName="text-[15px]  mt-[8px]" placeholder="" />
             </div>
             <div className="flex flex-col ">
-              <Input label={<Check label="Company EIN#" />} labelClassName="text-[15px]  mt-[8px]" placeholder="" />
+              <Input label={<Check label="Company EIN#" />} labelClassName="text-[15px]" placeholder="" />
             </div>
 
             <div className="flex flex-col ">

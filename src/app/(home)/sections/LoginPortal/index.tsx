@@ -66,7 +66,7 @@ export const LoginPortalSection = () => {
                     Delivery Operators.
                   </Tooltip>
                 </div>
-                <Link href="/signup">
+                <Link href="/signin">
                   <TransparentButton>Login</TransparentButton>
                 </Link>
               </GradientCard>

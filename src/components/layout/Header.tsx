@@ -12,11 +12,13 @@ import Lock from '@assets/icons/lock.svg'
 import { Button } from '@components/ui/Button'
 import { Logo } from '@components/ui/Logo'
 
+import { useUserContext } from '../../providers/UserProvider'
+
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openVideoModal, setOpenVideoModal] = useState(false)
   const pathName = usePathname()
-
+  const { user } = useUserContext()
   const closeMenu = () => {
     setMobileMenuOpen(false)
   }
@@ -58,20 +60,29 @@ export default function Example() {
                 <Nav>SHIP NOW</Nav>
                 <Nav href="/signup">JOIN NETWORK</Nav>
                 <Nav onClick={() => setOpenVideoModal(true)}>ABOUT US</Nav>
+                <Nav href="/internal">INTERNAL</Nav>
               </div>
-              <div className="flex">
-                <Nav href="/signin">
-                  <div className="flex gap-2 items-center text-white font-semibold transition fill-white hover:fill-white">
-                    <span className="font-medium text-input">Log in</span>
-                    <Lock className="" />
+              {user?.email ? (
+                <form action="/api/account/logout" method="post">
+                  <Button> Logout </Button>
+                </form>
+              ) : (
+                <>
+                  <div className="flex">
+                    <Nav href="/signin">
+                      <div className="flex gap-2 items-center text-white font-semibold transition fill-white hover:fill-white">
+                        <span className="font-medium text-input">Log in</span>
+                        <Lock className="" />
+                      </div>
+                    </Nav>
                   </div>
-                </Nav>
-              </div>
-              <div className="flex gap-2">
-                <Link href="/signup">
-                  <Button>Create Account</Button>
-                </Link>
-              </div>
+                  <div className="flex gap-2">
+                    <Link href="/signup">
+                      <Button>Create Account</Button>
+                    </Link>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>

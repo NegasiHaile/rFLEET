@@ -20,7 +20,6 @@ async function listCarriers() {
 async function getRateEstimates(params: GetRatesWithShipmentDetailsTypes.Params) {
   try {
     const result = await shipengine.getRatesWithShipmentDetails(params)
-
     return result
   } catch (e: any) {
     throw 'Error creating rates: ' + e.message

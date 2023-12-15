@@ -1,23 +1,18 @@
 import { cookies } from 'next/headers'
+import { NextResponse } from 'next/server'
 
-import { apiHandler } from '@lib/api'
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 
-/**
- * @swagger
- * /api/account/logout:
- *   post:
- *     description: Logout
- *     responses:
- *       200:
- *         description: Logout Successful
- */
+export const dynamic = 'force-dynamic'
 
-module.exports = apiHandler({
-  POST: logout
-})
+export async function POST(request: Request) {
+  const requestUrl = new URL(request.url)
+  const supabase = createRouteHandlerClient({ cookies })
 
-function logout() {
-  cookies().delete('authorization')
+  await supabase.auth.signOut()
 
-  return { response: { message: 'logout successful' } }
+  return NextResponse.redirect(`${requestUrl.origin}/signin`, {
+    // a 301 status is required to redirect from a POST to a GET route
+    status: 301
+  })
 }

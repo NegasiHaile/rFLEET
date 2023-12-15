@@ -40,6 +40,19 @@ interface ShippingStepsProps {
   data: any
 }
 
+type Package = {
+  weight: {
+    value: number | undefined
+    unit: string | undefined
+  }
+  dimensions: {
+    unit: string | undefined
+    length: number | undefined
+    width: number | undefined
+    height: number | undefined
+  }
+}
+
 const handleSubmit = async (
   data: any,
   setRates: React.Dispatch<React.SetStateAction<any>>,
@@ -47,24 +60,39 @@ const handleSubmit = async (
 ) => {
   var carrierIds = []
   if (data.fields?.[0].carrierProvider === 'UPS') {
-    carrierIds.push('se-5107720')
+    carrierIds.push('se-5107650')
   } else if (data.fields?.[0].carrierProvider === 'USPS') {
     carrierIds.push('se-5107717', 'se-5107720')
   } else if (data.fields?.[0].carrierProvider === 'FedEx') {
-    carrierIds.push('se-5107758')
+    carrierIds.push('se-5107651')
   } else {
-    carrierIds.push('se-5107717', 'se-5107720', 'se-5107758', 'se-5391275')
+    carrierIds.push('se-5107650', 'se-5107650', 'se-5107650', 'se-5107650')
   }
 
   try {
-    const datatest = {
+    const packages: Package[] = data.fields.flatMap((field: Field) =>
+      Array.from({ length: +field.noOfUnits }, () => ({
+        weight: {
+          value: field.weight,
+          unit: 'ounce'
+        },
+        dimensions: {
+          unit: field.dimensionUnit,
+          length: field.length,
+          width: field.width,
+          height: field.height
+        }
+      }))
+    )
+
+    const datatosend = {
       rateOptions: {
         carrierIds: carrierIds
       },
       shipment: {
         validateAddress: 'no_validation',
         shipTo: {
-          name: data.toName,
+          name: data.toName ? data.toName : 'To',
           phone: '555-555-5555',
           addressLine1: data.toAddress,
           stateProvince: data.toState,
@@ -74,87 +102,28 @@ const handleSubmit = async (
         },
         shipFrom: {
           companyName: 'Example Corp.',
-          name: data.fromName,
+          name: data.fromName ? data.fromName : 'From',
           phone: '111-111-1111',
           addressLine1: data.fromAddress,
-          stateProvince: data.fromState,
+          stateProvince: data.toState,
           cityLocality: data.fromCity,
           postalCode: data.fromPostalCode,
           countryCode: data.fromCountry
         },
-        packages: [
-          {
-            weight: {
-              value: data.fields[0].weight,
-              unit: data.fields[0].weightUnit
-            },
-            dimensions: {
-              unit: data.fields?.[0].dimensionUnit,
-              length: data.fields?.[0].length,
-              width: data.fields?.[0].width,
-              height: data.fields?.[0].height
-            }
-            // dimensions: {
-            //   unit: 'inch',
-            //   length: 12,
-            //   width: 12,
-            //   height: 12
-            // }
-          }
-        ]
+        packages: packages
       }
     }
-    // const datatest = {
-    //   rateOptions: {
-    //     carrierIds: ['se-5107717', 'se-5107720', 'se-5107758', 'se-5391275']
-    //   },
-    //   shipment: {
-    //     validateAddress: 'no_validation',
-    //     shipTo: {
-    //       name: 'Luke Skywalker',
-    //       phone: '555-555-5555',
-    //       addressLine1: '1001 SW 17TH LN',
-    //       stateProvince: 'FL',
-    //       cityLocality: 'GAINESVILLE',
-    //       postalCode: '32601-0001',
-    //       countryCode: 'US'
-    //     },
-    //     shipFrom: {
-    //       companyName: 'Example Corp.',
-    //       name: 'Darth Vader',
-    //       phone: '111-111-1111',
-    //       addressLine1: '303 W 5TH ST',
-    //       stateProvince: 'TX',
-    //       cityLocality: 'AUSTIN',
-    //       postalCode: '78701-3164',
-    //       countryCode: 'US'
-    //     },
-    //     packages: [
-    //       {
-    //         weight: {
-    //           value: 10,
-    //           unit: 'pound'
-    //         },
-    //         dimensions: {
-    //           unit: 'inch',
-    //           length: 12,
-    //           width: 12,
-    //           height: 12
-    //         }
-    //       }
-    //     ]
-    //   }
-    // }
 
+    console.log('data: ', data)
+    console.log('datatosend: ', datatosend)
     const response = await fetch('/api/shipengine/rates/estimate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(datatest)
+      body: JSON.stringify(datatosend)
     })
 
-    console.log('Da Data: ', data)
     const responseData = await response.json()
     console.log('the response: ', responseData)
     setRates(responseData)
@@ -185,6 +154,17 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
   useEffect(() => {
     setSelected(0)
   }, [])
+
+  const handelSendFile = async function (data: any, endpoint: string, method: string) {
+    await fetch(`${endpoint}`, {
+      method: `${method}`,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    console.log(rates)
+  }
 
   const handleClick = (index: number) => {
     setSelected(index)
@@ -293,7 +273,7 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
                   </div>
                 </div>
               ) : (
-                'What are you shipping?'
+                'What are you shiping?'
               )}
             </ShippingStep>
             <ShippingStep
@@ -321,7 +301,6 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
               className="lg:w-auto w-full"
               onClick={(e) => {
                 setIsLoading(true)
-
                 handleButtonClick(e, data, setRates, setIsLoading)
                 setDisplayRate(true)
               }}
@@ -343,34 +322,40 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
                 <div className="backdrop-blur -mx-[24px] px-[24px] -mb-[24px] pb-[24px]">
                   <GradientHR />
                   <div className="my-5 text-white font-poppins text-[16px] font-bold leading-6">Load Details</div>
-                  {/* {fields.length > 1 && (
-                <>
-                  {fields.slice(0, fields.length - 1).map((el, index) => ( */}
-                  <div className="flex border border-white rounded-d-6 mb-5">
-                    <div className="shrink-0 text-[14px] lg:px-[30px] px-[23px] lg:py-[15px] py-[10px]">Load 1</div>
-                    <div className="grow text-[14px] lg:px-[60px] px-[53px] lg:py-[15px] py-[10px]">
-                      {(rates as any).packages?.[0]?.packageCode}
+                  {fields.map((el, index) => (
+                    <div key={index} className="flex border border-white rounded-d-6 mb-5">
+                      <div className="shrink-0 text-[14px] lg:px-[30px] px-[23px] lg:py-[15px] py-[10px]">
+                        Load {index + 1}
+                      </div>
+                      <div className="grow text-[14px] lg:px-[60px] px-[53px] lg:py-[15px] py-[10px]">
+                        {el.identicalUnitsCount} {'Boxes / Crates'}
+                      </div>
+                      <div className="grow text-[14px] lg:px-[30px] px-[23px] lg:py-[15px] py-[10px]">
+                        {el.length} X {el.width} X {el.height} {el.dimensionUnit} {'/'} {el.weight} {el.weightUnit}
+                        {'s'}
+                      </div>
+                      <div className="ml-auto mt-1.5 mr-1.5">
+                        {/* <div className="flex shrink-0 justify-center items-center lg:px-[40px] px-[30px] lg:py-[15px] py-[10px] hover:cursor-pointer"> */}
+                        {/* <Delete
+                          onClick={() => {
+                            let newArray = [...fields]
+                            newArray.splice(index, 1)
+                            setValue('fields', newArray, { shouldValidate: true })
+                          }}
+                        /> */}
+                        <Tab
+                          target="tab-ship-load-type"
+                          onClick={() => {
+                            setDisplayRate(false)
+                          }}
+                        >
+                          <Button size="sm">
+                            <Pencil />
+                          </Button>
+                        </Tab>
+                      </div>
                     </div>
-                    <div className="grow text-[14px] lg:px-[30px] px-[23px] lg:py-[15px] py-[10px]">
-                      {(rates as any).packages?.[0]?.dimensions.length}X{(rates as any).packages?.[0]?.dimensions.width}
-                      X{(rates as any).packages?.[0]?.dimensions.height} {(rates as any).packages?.[0]?.dimensions.unit}
-                      {' / '}
-                      {(rates as any).packages?.[0]?.weight.value} {(rates as any).packages?.[0]?.weight.unit}
-                      {'s'}
-                    </div>
-                    <div className="flex shrink-0 justify-center items-center lg:px-[40px] px-[30px] lg:py-[15px] py-[10px] hover:cursor-pointer">
-                      <Delete
-                      // onClick={() => {
-                      //   let newArray = [...fields]
-                      //   newArray.splice(index, 1)
-                      //   setValue('fields', newArray, { shouldValidate: true })
-                      // }}
-                      />
-                    </div>
-                  </div>
-                  {/* ))}
-                </>
-              )} */}
+                  ))}
                   <GradientHR />
 
                   <div className="flex flex-row">
@@ -523,7 +508,7 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
                     </div>
                   </div>
 
-                  {url?.slice(0, 5).map((rate: any, index: number) => (
+                  {url?.slice(0, 10).map((rate: any, index: number) => (
                     <div key={index} className="bg-gradient-rate-card rounded-lg p-4 my-4 pr-0 border border-[#4f5684]">
                       <div className="flex mx-auto">
                         <div className="w-[25%]">
@@ -615,87 +600,6 @@ export const ShippingSteps = ({ shippingStepId, data }: ShippingStepsProps) => {
                       </div>
                     </div>
                   ))}
-
-                  {/* {(rates as any).rateResponse?.invalidRates.map((rate: any, index: number) => (
-
-                    <div key={index} className="bg-gradient-rate-card rounded-lg p-4 my-4 pr-0 border border-[#4f5684]">
-                      <div className="flex mx-auto">
-                        <div className="w-[25%]">
-                          <div className="border border-[#4f5684] rounded-md w-[70px] text-[10px] leading-4 pl-2 py-1 bg-gradient-rate-card">
-                            Best Value
-                          </div>
-                          <div className="flex flex-row mt-8">
-                            <div className="bg-white w-[200px] rounded-sm">
-                              <div className="p-3 pl-14">
-                                {
-                                  carrierProviderIcons[
-                                    (rates as any).rateResponse?.invalidRates[index].serviceType?.trim().split(' ')[0]
-                                  ]
-                                }
-                              </div>
-                            </div>
-
-                            <div className="mt-3 ml-2">
-                              <Star />
-                            </div>
-                            <div className="mt-4 ml-1 mr-2">(4.5)</div>
-                          </div>
-                          <div>
-                            {' '}
-                            {(rates as any).rateResponse?.rates[index].serviceType} test
-                            {(rates as any).rateResponse?.rates[index].rateId}
-                          </div>
-                        </div>
-                        <div className="p-2">
-                          <LineRate />
-                        </div>
-                        <div className="p-4 mt-3 w-[47%]">
-                          <div className="pb-6 flex flex-row">
-                            <div className="text-white font-poppins text-sm font-normal leading-4 pr-2">Est. </div>
-                            <div className="text-white font-poppins text-sm font-semibold leading-4">
-                              {(rates as any).rateResponse?.invalidRates[index].carrierDeliveryDays} business days
-                            </div>
-                          </div>
-                          <div className="flex flex-row">
-                            <Location />
-                            <div className="ml-2 mr-6">
-                              {(rates as any).shipFrom?.postalCode}, {(rates as any).shipFrom?.cityLocality}
-                            </div>
-                            <Plane />
-                            <div className="mx-2 mr-5 "></div>
-                            <Location />
-                            <div className="ml-2">
-                              {(rates as any).shipTo?.postalCode}, {(rates as any).shipTo?.cityLocality}
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-2">
-                          <LineRate />
-                        </div>
-                        <div className="py-4 pt-6 flex flex-row">
-                          <div className="ml-2">
-                            <div className="flex flex-row">
-                              <div className="text-white text-right font-poppins text-[30px] font-semibold leading-9 pb-5 pr-6 ">
-                                ${(rates as any).rateResponse?.rates[index].shippingAmount?.amount}
-                              </div>
-                              <Button size="md" className="lg:w-auto w-full h-10">
-                                Select
-                              </Button>
-                            </div>
-                            <div className="flex flex-row">
-                              <div className="text-white font-poppins text-[12px] font-normal leading-4 pr-2 pt-[2px]">
-                                Rate expires:{' '}
-                              </div>
-                              <div className="text-white font-poppins text-[14px] font-medium leading-5">
-                                Sep 16, 2023 05:58 (UTC)
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      Invalid Rate
-                    </div>
-                  ))} */}
                 </div>
               )}
             </div>

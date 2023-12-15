@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 
+import Typewriter from 'typewriter-effect'
+
 import PlayCircle from '@assets/icons/play-circle.svg'
 import globeVideo from '@assets/videos/cities-globe.mp4'
 import { Button } from '@components/ui/Button'
@@ -18,8 +20,25 @@ export const BannerSection = () => {
       <div className="container block lg:grid grid-cols-9">
         <div className="col-span-5 py-[100px] lg:pt-[140px] pb-[100px]">
           <h4 className="font-bold mb-[15px] lg:mb-[20px]">
-            ELEVATE YOUR LOGISTICS
-            <br className="only-desktop" />
+            <Typewriter
+              options={{
+                strings: [
+                  'ELEVATE YOUR LOGISTICS',
+                  'EXPAND YOUR BUSINESS',
+                  'CONNECT ONLINE STORE',
+                  'STREAMLINE OPERATIONS',
+                  'OPTIMIZE YOUR DELIVERIES',
+                  'MANAGE TRUCK ASSETS',
+                  'MANAGE YOUR INVENTORY',
+                  'MANAGE YOUR WAREHOUSE',
+                  'GAIN SECURITY AND CONTROL'
+                ],
+                autoStart: true,
+                delay: 35,
+                loop: true
+              }}
+            />
+            {/* <br className="only-desktop" /> */}
             WITH <span className="text-gradient bg-gradient-primary-to-br">rFleet.ai:</span>
             <div className="text-gradient bg-gradient-primary-to-br">
               EMPOWERING SUPPLY

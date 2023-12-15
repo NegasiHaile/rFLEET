@@ -9,13 +9,15 @@ export type Field = {
   dimensionUnit: string
   weight: string
   weightUnit: string
-  identicalUnitsCount: string
+  identicalUnitsCount: number
   containsAlcohol: boolean
   alcoholRecipientType: 'License' | 'Consumer' | ''
   containsDryIce: boolean
   dryIceWeight: string
   createsReturnLabel: boolean
   returnLabel: ''
+  noOfUnits: string
+  handlingUnit: string
   containsLithium: boolean
 }
 
@@ -121,14 +123,16 @@ export const initialField: Field = {
   dimensionUnit: '',
   weight: '',
   weightUnit: '',
-  identicalUnitsCount: '',
+  identicalUnitsCount: 0,
   containsAlcohol: false,
   alcoholRecipientType: '',
   containsDryIce: false,
   dryIceWeight: '',
   createsReturnLabel: false,
   returnLabel: '',
-  containsLithium: false
+  containsLithium: false,
+  noOfUnits: '',
+  handlingUnit: ''
 }
 
 export const fromSchema = yup.object({
@@ -138,7 +142,7 @@ export const fromSchema = yup.object({
   fromCity: yup.string().required(),
   fromPostalCode: yup.string().required(),
   fromState: yup.string().required(),
-  fromName: yup.string().required()
+  fromName: yup.string()
 })
 
 export const toSchema = yup.object({
@@ -148,7 +152,7 @@ export const toSchema = yup.object({
   toCity: yup.string().required(),
   toPostalCode: yup.string().required(),
   toState: yup.string().required(),
-  toName: yup.string().required()
+  toName: yup.string()
 })
 
 export const loadTypeSchema: any & { fields: Field[] } = yup.object({
