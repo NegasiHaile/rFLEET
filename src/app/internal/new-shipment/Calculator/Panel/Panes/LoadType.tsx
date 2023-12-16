@@ -25,7 +25,7 @@ import { useShipping } from '../useShipping'
 interface Props {
   methods: UseFormReturn<LoadTypeInputs>
   onSubmit: SubmitHandler<LoadTypeInputs>
-  data: any
+  data?: any
 }
 
 export const LoadType = ({ methods, onSubmit, data }: Props) => {
