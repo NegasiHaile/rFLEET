@@ -2,13 +2,13 @@
 
 import { useEffect, useRef } from 'react'
 
-import earthMap from '@assets/images/earth-night-map.jpg'
-import citiesData from '@json/cities.json'
-import * as helvetiker from '@json/helvetiker_regular.typeface.json'
-
 import * as THREE from 'three'
 // import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
+
+import earthMap from '@assets/images/earth-night-map.jpg'
+import citiesData from '@json/cities.json'
+import * as helvetiker from '@json/helvetiker_regular.typeface.json'
 
 const WIDTH = 521
 const HEIGHT = 521

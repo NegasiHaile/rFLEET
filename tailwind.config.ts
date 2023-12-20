@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+
 
 const config: Config = {
   content: [
@@ -21,14 +22,55 @@ const config: Config = {
         current: colors.current,
         transparent: colors.transparent,
         primary: '#2F80ED',
-        'primary-green': '#4AED52',
         secondary: '#141943',
         dark: '#0E1135',
         info: '#0C63E7',
-        black: colors.black,
-        white: colors.white,
         light: colors.purple[200],
         slate: colors.slate,
+        zinc: colors.zinc,
+        neutral: colors.neutral,
+        stone: colors.stone,
+        red: colors.red,
+        orange: colors.orange,
+        amber: colors.amber,
+        yellow: colors.yellow,
+        lime: colors.lime,
+        green: { ...colors.green, DEFAULT: '#4AED52' },
+        emerald: colors.emerald,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        sky: colors.sky,
+        blue: colors.blue,
+        indigo: colors.indigo,
+        violet: colors.violet,
+        purple: colors.purple,
+        fuchsia: colors.fuchsia,
+        pink: colors.pink,
+        rose: colors.rose,
+        white: {
+          DEFAULT: colors.white,
+          10: '#FFFFFF10',
+          20: '#FFFFFF20',
+          30: '#FFFFFF30',
+          40: '#FFFFFF40',
+          50: '#FFFFFF50',
+          60: '#FFFFFF60',
+          70: '#FFFFFF70',
+          80: '#FFFFFF80',
+          90: '#FFFFFF90'
+        },
+        black: {
+          DEFAULT: colors.black,
+          10: '#00000010',
+          20: '#00000020',
+          30: '#00000030',
+          40: '#00000040',
+          50: '#00000050',
+          60: '#00000060',
+          70: '#00000070',
+          80: '#00000080',
+          90: '#00000090'
+        },
         gray: {
           DEFAULT: '#9da3bd',
           50: '#FAFAFC',
@@ -41,27 +83,7 @@ const config: Config = {
           700: '#434959',
           800: '#293041',
           900: '#0f172a'
-        },
-        zinc: colors.zinc,
-        neutral: colors.neutral,
-        stone: colors.stone,
-        red: colors.red,
-        orange: colors.orange,
-        amber: colors.amber,
-        yellow: colors.yellow,
-        lime: colors.lime,
-        green: colors.green,
-        emerald: colors.emerald,
-        teal: colors.teal,
-        cyan: colors.cyan,
-        sky: colors.sky,
-        blue: colors.blue,
-        indigo: colors.indigo,
-        violet: colors.violet,
-        purple: colors.purple,
-        fuchsia: colors.fuchsia,
-        pink: colors.pink,
-        rose: colors.rose
+        }
       }),
       columns: {
         auto: 'auto',
@@ -173,6 +195,10 @@ const config: Config = {
 
         'gradient-card': 'linear-gradient(135deg, #69EACB 0%, #5FA4E6 53.12%, #6654F1 100%)',
 
+        'gradient-rate-card': 'linear-gradient(117deg, #1C194B 0.9%, rgba(47, 128, 237, 0.20) 100%)',
+
+        'scm-application-gradient': 'var(--scm-application-gradiant-strock-gradiant, rgba(255, 255, 255, 0.30))',
+
         'gradient-for-onboarding-section':
           'linear-gradient(180deg, rgba(8,0,9,1) 0%, rgba(8,0,9,1) 6%, rgba(8,0,9,0) 16%, rgba(8,0,9,0) 80%, rgba(8,0,9,0.8) 100%)',
 
@@ -249,13 +275,17 @@ const config: Config = {
         8: '8px'
       },
       boxShadow: {
-        sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
         DEFAULT: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+        sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
         md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
         lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
         xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
         '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
         inner: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
+
+        button: '0px 0px 10px 2px rgba(74,237,82,0.6)',
+        'button-lg': '0px 0px 10px 4px rgba(74,237,82,1)',
+
         none: 'none'
       },
       boxShadowColor: ({ theme }) => theme('colors'),
@@ -936,7 +966,8 @@ const config: Config = {
         screen: '100vw',
         min: 'min-content',
         max: 'max-content',
-        fit: 'fit-content'
+        fit: 'fit-content',
+        inherit: 'inherit'
       }),
       willChange: {
         auto: 'auto',

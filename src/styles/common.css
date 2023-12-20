@@ -1,10 +1,14 @@
 a {
-  @apply block text-inherit no-underline hover:text-primary-green cursor-pointer;
+  @apply block text-inherit no-underline hover:text-green cursor-pointer;
 }
 
 a.svg-hover:hover svg,
 a.svg-hover:hover svg * {
-  @apply hover:fill-primary-green;
+  @apply hover:fill-green;
+}
+
+input {
+  @apply lg:text-[14px] text-[10px] leading-[20px];
 }
 
 .container {
@@ -69,7 +73,7 @@ a.svg-hover:hover svg * {
 }
 
 .hover-bg-green-glow:hover {
-  @apply border-primary-green;
+  @apply border-green;
   box-shadow: -1px 0px 9px 2px rgba(74, 237, 82, 0.75);
   -webkit-box-shadow: -1px 0px 9px 2px rgba(74, 237, 82, 0.75);
   -moz-box-shadow: -1px 0px 9px 2px rgba(74, 237, 82, 0.75);
@@ -77,4 +81,105 @@ a.svg-hover:hover svg * {
 
 .react-tooltip-portal-help-container .react-tooltip-arrow {
   @apply !w-[25px] !h-[25px] lg:!left-[20px] !left-auto !right-[20px] !bottom-[-10px];
+}
+
+/* width */
+.slick-scroll::-webkit-scrollbar {
+  @apply w-[8px] px-[1px] bg-transparent;
+}
+
+/* Track */
+.slick-scroll::-webkit-scrollbar-track {
+  @apply rounded-[10px] bg-[#FFFFFF40];
+}
+
+/* Handle */
+.slick-scroll::-webkit-scrollbar-thumb {
+  @apply bg-[#FFFFFF90] rounded-[10px];
+}
+
+/* Handle on hover */
+.slick-scroll::-webkit-scrollbar-thumb:hover {
+  @apply bg-white;
+}
+
+.gap-d-36 {
+  @apply lg:gap-[36px] gap-[24px];
+}
+
+.gap-d-24 {
+  @apply lg:gap-[24px] gap-[18px];
+}
+
+.gap-d-18 {
+  @apply lg:gap-[18px] gap-[13px];
+}
+
+.gap-d-16 {
+  @apply lg:gap-[16px] gap-[12px];
+}
+
+.gap-d-12 {
+  @apply lg:gap-[12px] gap-[8px];
+}
+
+.gap-d-10 {
+  @apply lg:gap-[10px] gap-[7px];
+}
+
+.rounded-d-8 {
+  @apply lg:rounded-[8px] rounded-[6px];
+}
+
+.rounded-d-6 {
+  @apply lg:rounded-[6px] rounded-[5px];
+}
+
+.z-999 {
+  z-index: 99999 !important;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; 
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.301);
+  border-radius: 6px; 
+
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+@keyframes fillProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#progress-bar {
+  animation: fillProgress 1s ease-in-out;
+}
+
+/* Style the calendar picker button */
+input[type="date"]::-webkit-calendar-picker-indicator {
+ font-size: 20px;
+}
+
+/* Style the calendar picker button on Firefox */
+input[type="date"]::-moz-calendar-picker-indicator {
+
+  font-size: 20px;
 }

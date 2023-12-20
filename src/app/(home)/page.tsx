@@ -2,6 +2,7 @@
 
 import { ParallaxProvider } from 'react-scroll-parallax'
 
+import './Botframework.css'
 import { AboutSection } from './sections/About'
 import { BannerSection } from './sections/Banner'
 import { CalculatorSection } from './sections/Calculator'

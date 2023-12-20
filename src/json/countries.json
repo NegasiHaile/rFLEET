@@ -1,0 +1,1307 @@
+[
+  {
+    "code": "US",
+    "country": "United States",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg"
+  },
+  {
+    "code": "AC",
+    "country": "Ascension Island",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e8.svg"
+  },
+  {
+    "code": "AD",
+    "country": "Andorra",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e9.svg"
+  },
+  {
+    "code": "AE",
+    "country": "United Arab Emirates",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ea.svg"
+  },
+  {
+    "code": "AF",
+    "country": "Afghanistan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1eb.svg"
+  },
+  {
+    "code": "AG",
+    "country": "Antigua & Barbuda",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ec.svg"
+  },
+  {
+    "code": "AI",
+    "country": "Anguilla",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ee.svg"
+  },
+  {
+    "code": "AL",
+    "country": "Albania",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f1.svg"
+  },
+  {
+    "code": "AM",
+    "country": "Armenia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f2.svg"
+  },
+  {
+    "code": "AD",
+    "country": "Angola",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f4.svg"
+  },
+  {
+    "code": "AQ",
+    "country": "Antarctica",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f6.svg"
+  },
+  {
+    "code": "AR",
+    "country": "Argentina",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f7.svg"
+  },
+  {
+    "code": "AS",
+    "country": "American Samoa",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f8.svg"
+  },
+  {
+    "code": "AT",
+    "country": "Austria",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f9.svg"
+  },
+  {
+    "code": "au",
+    "country": "Australia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fa.svg"
+  },
+  {
+    "code": "AW",
+    "country": "Aruba",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fc.svg"
+  },
+  {
+    "code": "AX",
+    "country": "Åland Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fd.svg"
+  },
+  {
+    "code": "AZ",
+    "country": "Azerbaijan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ff.svg"
+  },
+  {
+    "code": "BA",
+    "country": "Bosnia & Herzegovina",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e6.svg"
+  },
+  {
+    "code": "BB",
+    "country": "Barbados",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e7.svg"
+  },
+  {
+    "code": "BD",
+    "country": "Bangladesh",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e9.svg"
+  },
+  {
+    "code": "BE",
+    "country": "Belgium",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ea.svg"
+  },
+  {
+    "code": "BF",
+    "country": "Burkina Faso",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1eb.svg"
+  },
+  {
+    "code": "BG",
+    "country": "Bulgaria",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ec.svg"
+  },
+  {
+    "code": "BH",
+    "country": "Bahrain",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ed.svg"
+  },
+  {
+    "code": "BI",
+    "country": "Burundi",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ee.svg"
+  },
+  {
+    "code": "BJ",
+    "country": "Benin",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ef.svg"
+  },
+  {
+    "code": "BL",
+    "country": "St. Barthélemy",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f1.svg"
+  },
+  {
+    "code": "BM",
+    "country": "Bermuda",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f2.svg"
+  },
+  {
+    "code": "BN",
+    "country": "Brunei",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f3.svg"
+  },
+  {
+    "code": "BO",
+    "country": "Bolivia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f4.svg"
+  },
+  {
+    "code": "BQ",
+    "country": "Caribbean Netherlands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f6.svg"
+  },
+  {
+    "code": "BR",
+    "country": "Brazil",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f7.svg"
+  },
+  {
+    "code": "BS",
+    "country": "Bahamas",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f8.svg"
+  },
+  {
+    "code": "BT",
+    "country": "Bhutan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f9.svg"
+  },
+  {
+    "code": "BV",
+    "country": "Bouvet Island",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fb.svg"
+  },
+  {
+    "code": "BW",
+    "country": "Botswana",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fc.svg"
+  },
+  {
+    "code": "BY",
+    "country": "Belarus",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fe.svg"
+  },
+  {
+    "code": "BZ",
+    "country": "Belize",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ff.svg"
+  },
+  {
+    "code": "CA",
+    "country": "Canada",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e6.svg"
+  },
+  {
+    "code": "CC",
+    "country": "Cocos (Keeling) Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e8.svg"
+  },
+  {
+    "code": "CG",
+    "country": "Congo - Kinshasa",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e9.svg"
+  },
+  {
+    "code": "CF",
+    "country": "Central African Republic",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1eb.svg"
+  },
+  {
+    "code": "CD",
+    "country": "Congo - Brazzaville",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ec.svg"
+  },
+  {
+    "code": "CH",
+    "country": "Switzerland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ed.svg"
+  },
+  {
+    "code": "CI",
+    "country": "Côte d’Ivoire",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ee.svg"
+  },
+  {
+    "code": "CK",
+    "country": "Cook Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f0.svg"
+  },
+  {
+    "code": "CL",
+    "country": "Chile",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f1.svg"
+  },
+  {
+    "code": "CM",
+    "country": "Cameroon",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f2.svg"
+  },
+  {
+    "code": "CN",
+    "country": "China",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f3.svg"
+  },
+  {
+    "code": "CO",
+    "country": "Colombia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f4.svg"
+  },
+  {
+    "code": "CP",
+    "country": "Clipperton Island",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f5.svg"
+  },
+  {
+    "code": "CR",
+    "country": "Costa Rica",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f7.svg"
+  },
+  {
+    "code": "CU",
+    "country": "Cuba",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fa.svg"
+  },
+  {
+    "code": "CV",
+    "country": "Cape Verde",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fb.svg"
+  },
+  {
+    "code": "CW",
+    "country": "Curaçao",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fc.svg"
+  },
+  {
+    "code": "CX",
+    "country": "Christmas Island",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fd.svg"
+  },
+  {
+    "code": "CY",
+    "country": "Cyprus",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fe.svg"
+  },
+  {
+    "code": "CZ",
+    "country": "Czechia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ff.svg"
+  },
+  {
+    "code": "DE",
+    "country": "Germany",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ea.svg"
+  },
+  {
+    "code": "DG",
+    "country": "Diego Garcia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ec.svg"
+  },
+  {
+    "code": "DJ",
+    "country": "Djibouti",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ef.svg"
+  },
+  {
+    "code": "DK",
+    "country": "Denmark",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f0.svg"
+  },
+  {
+    "code": "DM",
+    "country": "Dominica",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f2.svg"
+  },
+  {
+    "code": "DO",
+    "country": "Dominican Republic",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f4.svg"
+  },
+  {
+    "code": "DZ",
+    "country": "Algeria",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ff.svg"
+  },
+  {
+    "code": "EA",
+    "country": "Ceuta & Melilla",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e6.svg"
+  },
+  {
+    "code": "EC",
+    "country": "Ecuador",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e8.svg"
+  },
+  {
+    "code": "EE",
+    "country": "Estonia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ea.svg"
+  },
+  {
+    "code": "EG",
+    "country": "Egypt",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ec.svg"
+  },
+  {
+    "code": "EH",
+    "country": "Western Sahara",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ed.svg"
+  },
+  {
+    "code": "ER",
+    "country": "Eritrea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f7.svg"
+  },
+  {
+    "code": "ES",
+    "country": "Spain",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f8.svg"
+  },
+  {
+    "code": "ET",
+    "country": "Ethiopia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f9.svg"
+  },
+  {
+    "code": "EU",
+    "country": "European Union",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1fa.svg"
+  },
+  {
+    "code": "FI",
+    "country": "Finland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1ee.svg"
+  },
+  {
+    "code": "FJ",
+    "country": "Fiji",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1ef.svg"
+  },
+  {
+    "code": "FK",
+    "country": "Falkland Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f0.svg"
+  },
+  {
+    "code": "FM",
+    "country": "Micronesia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f2.svg"
+  },
+  {
+    "code": "FO",
+    "country": "Faroe Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f4.svg"
+  },
+  {
+    "code": "FR",
+    "country": "France",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg"
+  },
+  {
+    "code": "GA",
+    "country": "Gabon",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e6.svg"
+  },
+  {
+    "code": "GB",
+    "country": "United Kingdom",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg"
+  },
+  {
+    "code": "GD",
+    "country": "Grenada",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e9.svg"
+  },
+  {
+    "code": "GE",
+    "country": "Georgia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ea.svg"
+  },
+  {
+    "code": "GF",
+    "country": "French Guiana",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1eb.svg"
+  },
+  {
+    "code": "GG",
+    "country": "Guernsey",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ec.svg"
+  },
+  {
+    "code": "GH",
+    "country": "Ghana",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ed.svg"
+  },
+  {
+    "code": "GI",
+    "country": "Gibraltar",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ee.svg"
+  },
+  {
+    "code": "GL",
+    "country": "Greenland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f1.svg"
+  },
+  {
+    "code": "GM",
+    "country": "Gambia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f2.svg"
+  },
+  {
+    "code": "GN",
+    "country": "Guinea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f3.svg"
+  },
+  {
+    "code": "GP",
+    "country": "Guadeloupe",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f5.svg"
+  },
+  {
+    "code": "GQ",
+    "country": "Equatorial Guinea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f6.svg"
+  },
+  {
+    "code": "GR",
+    "country": "Greece",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f7.svg"
+  },
+  {
+    "code": "GS",
+    "country": "South Georgia & South', Sandwich Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f8.svg"
+  },
+  {
+    "code": "GT",
+    "country": "Guatemala",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f9.svg"
+  },
+  {
+    "code": "GU",
+    "country": "Guam",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fa.svg"
+  },
+  {
+    "code": "GW",
+    "country": "Guinea-Bissau",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fc.svg"
+  },
+  {
+    "code": "GY",
+    "country": "Guyana",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fe.svg"
+  },
+  {
+    "code": "HK",
+    "country": "Hong Kong SAR China",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f0.svg"
+  },
+  {
+    "code": "HM",
+    "country": "Heard & McDonald Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f2.svg"
+  },
+  {
+    "code": "HN",
+    "country": "Honduras",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f3.svg"
+  },
+  {
+    "code": "HR",
+    "country": "Croatia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f7.svg"
+  },
+  {
+    "code": "HT",
+    "country": "Haiti",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f9.svg"
+  },
+  {
+    "code": "HU",
+    "country": "Hungary",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1fa.svg"
+  },
+  {
+    "code": "IC",
+    "country": "Canary Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1e8.svg"
+  },
+  {
+    "code": "ID",
+    "country": "Indonesia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1e9.svg"
+  },
+  {
+    "code": "IE",
+    "country": "Ireland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1ea.svg"
+  },
+  {
+    "code": "IL",
+    "country": "Israel",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f1.svg"
+  },
+  {
+    "code": "IM",
+    "country": "Isle of Man",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f2.svg"
+  },
+  {
+    "code": "IN",
+    "country": "India",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f3.svg"
+  },
+  {
+    "code": "IO",
+    "country": "British Indian Ocean Territory",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f4.svg"
+  },
+  {
+    "code": "IQ",
+    "country": "Iraq",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f6.svg"
+  },
+  {
+    "code": "IR",
+    "country": "Iran",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f7.svg"
+  },
+  {
+    "code": "IS",
+    "country": "Iceland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f8.svg"
+  },
+  {
+    "code": "IT",
+    "country": "Italy",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f9.svg"
+  },
+  {
+    "code": "JE",
+    "country": "Jersey",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1ea.svg"
+  },
+  {
+    "code": "JM",
+    "country": "Jamaica",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f2.svg"
+  },
+  {
+    "code": "JO",
+    "country": "Jordan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f4.svg"
+  },
+  {
+    "code": "JP",
+    "country": "Japan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f5.svg"
+  },
+  {
+    "code": "KE",
+    "country": "Kenya",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ea.svg"
+  },
+  {
+    "code": "KG",
+    "country": "Kyrgyzstan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ec.svg"
+  },
+  {
+    "code": "KH",
+    "country": "Cambodia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ed.svg"
+  },
+  {
+    "code": "KI",
+    "country": "Kiribati",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ee.svg"
+  },
+  {
+    "code": "KM",
+    "country": "Comoros",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f2.svg"
+  },
+  {
+    "code": "KN",
+    "country": "St. Kitts & Nevis",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f3.svg"
+  },
+  {
+    "code": "KP",
+    "country": "North Korea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f5.svg"
+  },
+  {
+    "code": "KR",
+    "country": "South Korea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f7.svg"
+  },
+  {
+    "code": "KW",
+    "country": "Kuwait",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1fc.svg"
+  },
+  {
+    "code": "KY",
+    "country": "Cayman Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1fe.svg"
+  },
+  {
+    "code": "KZ",
+    "country": "Kazakhstan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ff.svg"
+  },
+  {
+    "code": "LA",
+    "country": "Laos",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e6.svg"
+  },
+  {
+    "code": "LB",
+    "country": "Lebanon",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e7.svg"
+  },
+  {
+    "code": "LC",
+    "country": "St. Lucia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e8.svg"
+  },
+  {
+    "code": "LI",
+    "country": "Liechtenstein",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1ee.svg"
+  },
+  {
+    "code": "LK",
+    "country": "Sri Lanka",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f0.svg"
+  },
+  {
+    "code": "LR",
+    "country": "Liberia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f7.svg"
+  },
+  {
+    "code": "LS",
+    "country": "Lesotho",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f8.svg"
+  },
+  {
+    "code": "LT",
+    "country": "Lithuania",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f9.svg"
+  },
+  {
+    "code": "LU",
+    "country": "Luxembourg",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fa.svg"
+  },
+  {
+    "code": "LV",
+    "country": "Latvia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fb.svg"
+  },
+  {
+    "code": "LY",
+    "country": "Libya",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fe.svg"
+  },
+  {
+    "code": "MA",
+    "country": "Morocco",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e6.svg"
+  },
+  {
+    "code": "MC",
+    "country": "Monaco",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e8.svg"
+  },
+  {
+    "code": "MD",
+    "country": "Moldova",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e9.svg"
+  },
+  {
+    "code": "ME",
+    "country": "Montenegro",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ea.svg"
+  },
+  {
+    "code": "MF",
+    "country": "St. Martin",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1eb.svg"
+  },
+  {
+    "code": "MG",
+    "country": "Madagascar",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ec.svg"
+  },
+  {
+    "code": "MH",
+    "country": "Marshall Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ed.svg"
+  },
+  {
+    "code": "MK",
+    "country": "North Macedonia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f0.svg"
+  },
+  {
+    "code": "ML",
+    "country": "Mali",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f1.svg"
+  },
+  {
+    "code": "MM",
+    "country": "Myanmar (Burma)",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f2.svg"
+  },
+  {
+    "code": "MN",
+    "country": "Mongolia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f3.svg"
+  },
+  {
+    "code": "MO",
+    "country": "Macao Sar China",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f4.svg"
+  },
+  {
+    "code": "MP",
+    "country": "Northern Mariana Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f5.svg"
+  },
+  {
+    "code": "MQ",
+    "country": "Martinique",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f6.svg"
+  },
+  {
+    "code": "MR",
+    "country": "Mauritania",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f7.svg"
+  },
+  {
+    "code": "MS",
+    "country": "Montserrat",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f8.svg"
+  },
+  {
+    "code": "MT",
+    "country": "Malta",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f9.svg"
+  },
+  {
+    "code": "MU",
+    "country": "Mauritius",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fa.svg"
+  },
+  {
+    "code": "MV",
+    "country": "Maldives",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fb.svg"
+  },
+  {
+    "code": "MW",
+    "country": "Malawi",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fc.svg"
+  },
+  {
+    "code": "MX",
+    "country": "Mexico",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fd.svg"
+  },
+  {
+    "code": "MY",
+    "country": "Malaysia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fe.svg"
+  },
+  {
+    "code": "MZ",
+    "country": "Mozambique",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ff.svg"
+  },
+  {
+    "code": "NA",
+    "country": "Namibia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1e6.svg"
+  },
+  {
+    "code": "NC",
+    "country": "New Caledonia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1e8.svg"
+  },
+  {
+    "code": "NE",
+    "country": "Niger",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ea.svg"
+  },
+  {
+    "code": "NF",
+    "country": "Norfolk Island",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1eb.svg"
+  },
+  {
+    "code": "NG",
+    "country": "Nigeria",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ec.svg"
+  },
+  {
+    "code": "NI",
+    "country": "Nicaragua",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ee.svg"
+  },
+  {
+    "code": "NL",
+    "country": "Netherlands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f1.svg"
+  },
+  {
+    "code": "NO",
+    "country": "Norway",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f4.svg"
+  },
+  {
+    "code": "NP",
+    "country": "Nepal",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f5.svg"
+  },
+  {
+    "code": "NR",
+    "country": "Nauru",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f7.svg"
+  },
+  {
+    "code": "NU",
+    "country": "Niue",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1fa.svg"
+  },
+  {
+    "code": "NZ",
+    "country": "New Zealand",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ff.svg"
+  },
+  {
+    "code": "OM",
+    "country": "Oman",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f4-1f1f2.svg"
+  },
+  {
+    "code": "PA",
+    "country": "Panama",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1e6.svg"
+  },
+  {
+    "code": "PE",
+    "country": "Peru",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ea.svg"
+  },
+  {
+    "code": "PF",
+    "country": "French Polynesia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1eb.svg"
+  },
+  {
+    "code": "PG",
+    "country": "Papua New Guinea",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ec.svg"
+  },
+  {
+    "code": "PH",
+    "country": "Philippines",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ed.svg"
+  },
+  {
+    "code": "PK",
+    "country": "Pakistan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f0.svg"
+  },
+  {
+    "code": "PL",
+    "country": "Poland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f1.svg"
+  },
+  {
+    "code": "PM",
+    "country": "St. Pierre & Miquelon",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f2.svg"
+  },
+  {
+    "code": "PN",
+    "country": "Pitcairn Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f3.svg"
+  },
+  {
+    "code": "pr",
+    "country": "Puerto Rico",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f7.svg"
+  },
+  {
+    "code": "PS",
+    "country": "Palestinian Territories",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f8.svg"
+  },
+  {
+    "code": "PT",
+    "country": "Portugal",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f9.svg"
+  },
+  {
+    "code": "PW",
+    "country": "Palau",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1fc.svg"
+  },
+  {
+    "code": "PY",
+    "country": "Paraguay",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1fe.svg"
+  },
+  {
+    "code": "QA",
+    "country": "Qatar",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f6-1f1e6.svg"
+  },
+  {
+    "code": "RE",
+    "country": "Réunion",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1ea.svg"
+  },
+  {
+    "code": "RO",
+    "country": "Romania",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1f4.svg"
+  },
+  {
+    "code": "YU",
+    "country": "Serbia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1f8.svg"
+  },
+  {
+    "code": "RU",
+    "country": "Russia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1fa.svg"
+  },
+  {
+    "code": "RW",
+    "country": "Rwanda",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1fc.svg"
+  },
+  {
+    "code": "SA",
+    "country": "Saudi Arabia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e6.svg"
+  },
+  {
+    "code": "SB",
+    "country": "Solomon Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e7.svg"
+  },
+  {
+    "code": "SC",
+    "country": "Seychelles",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e8.svg"
+  },
+  {
+    "code": "SD",
+    "country": "Sudan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e9.svg"
+  },
+  {
+    "code": "SE",
+    "country": "Sweden",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ea.svg"
+  },
+  {
+    "code": "SG",
+    "country": "Singapore",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ec.svg"
+  },
+  {
+    "code": "SH",
+    "country": "St. Helena",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ed.svg"
+  },
+  {
+    "code": "SI",
+    "country": "Slovenia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ee.svg"
+  },
+  {
+    "code": "SJ",
+    "country": "Svalbard & Jan Mayen",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ef.svg"
+  },
+  {
+    "code": "SK",
+    "country": "Slovakia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f0.svg"
+  },
+  {
+    "code": "SL",
+    "country": "Sierra Leone",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f1.svg"
+  },
+  {
+    "code": "SM",
+    "country": "San Marino",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f2.svg"
+  },
+  {
+    "code": "SN",
+    "country": "Senegal",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f3.svg"
+  },
+  {
+    "code": "SO",
+    "country": "Somalia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f4.svg"
+  },
+  {
+    "code": "SR",
+    "country": "Suriname",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f7.svg"
+  },
+  {
+    "code": "SS",
+    "country": "South Sudan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f8.svg"
+  },
+  {
+    "code": "ST",
+    "country": "São Tomé & Príncipe",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f9.svg"
+  },
+  {
+    "code": "SV",
+    "country": "El Salvador",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fb.svg"
+  },
+  {
+    "code": "SX",
+    "country": "Sint Maarten",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fd.svg"
+  },
+  {
+    "code": "SY",
+    "country": "Syria",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fe.svg"
+  },
+  {
+    "code": "SZ",
+    "country": "Eswatini",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ff.svg"
+  },
+  {
+    "code": "SH",
+    "country": "Tristan Da Cunha",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e6.svg"
+  },
+  {
+    "code": "TC",
+    "country": "Turks & Caicos Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e8.svg"
+  },
+  {
+    "code": "TD",
+    "country": "Chad",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e9.svg"
+  },
+  {
+    "code": "TF",
+    "country": "French Southern Territories",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1eb.svg"
+  },
+  {
+    "code": "TG",
+    "country": "Togo",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ec.svg"
+  },
+  {
+    "code": "TH",
+    "country": "Thailand",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ed.svg"
+  },
+  {
+    "code": "TJ",
+    "country": "Tajikistan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ef.svg"
+  },
+  {
+    "code": "TK",
+    "country": "Tokelau",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f0.svg"
+  },
+  {
+    "code": "TL",
+    "country": "Timor-Leste",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f1.svg"
+  },
+  {
+    "code": "TM",
+    "country": "Turkmenistan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f2.svg"
+  },
+  {
+    "code": "TN",
+    "country": "Tunisia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f3.svg"
+  },
+  {
+    "code": "TO",
+    "country": "Tonga",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f4.svg"
+  },
+  {
+    "code": "TR",
+    "country": "Turkey",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f7.svg"
+  },
+  {
+    "code": "TT",
+    "country": "Trinidad & Tobago",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f9.svg"
+  },
+  {
+    "code": "TV",
+    "country": "Tuvalu",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fb.svg"
+  },
+  {
+    "code": "TW",
+    "country": "Taiwan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fc.svg"
+  },
+  {
+    "code": "TZ",
+    "country": "Tanzania",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ff.svg"
+  },
+  {
+    "code": "UA",
+    "country": "Ukraine",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1e6.svg"
+  },
+  {
+    "code": "UG",
+    "country": "Uganda",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1ec.svg"
+  },
+  {
+    "code": "UM",
+    "country": "U.S. Outlying Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f2.svg"
+  },
+  {
+    "code": "UN",
+    "country": "United Nations",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f3.svg"
+  },
+  {
+    "code": "UY",
+    "country": "Uruguay",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1fe.svg"
+  },
+  {
+    "code": "UZ",
+    "country": "Uzbekistan",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1ff.svg"
+  },
+  {
+    "code": "VA",
+    "country": "Vatican City",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1e6.svg"
+  },
+  {
+    "code": "VC",
+    "country": "St. Vincent & Grenadines",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1e8.svg"
+  },
+  {
+    "code": "VE",
+    "country": "Venezuela",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ea.svg"
+  },
+  {
+    "code": "VG",
+    "country": "British Virgin Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ec.svg"
+  },
+  {
+    "code": "VI",
+    "country": "U.S. Virgin Islands",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ee.svg"
+  },
+  {
+    "code": "VN",
+    "country": "Vietnam",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1f3.svg"
+  },
+  {
+    "code": "VU",
+    "country": "Vanuatu",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1fa.svg"
+  },
+  {
+    "code": "WF",
+    "country": "Wallis & Futuna",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fc-1f1eb.svg"
+  },
+  {
+    "code": "WS",
+    "country": "Samoa",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fc-1f1f8.svg"
+  },
+  {
+    "code": "XK",
+    "country": "Kosovo",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fd-1f1f0.svg"
+  },
+  {
+    "code": "YE",
+    "country": "Yemen",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fe-1f1ea.svg"
+  },
+  {
+    "code": "YT",
+    "country": "Mayotte",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1fe-1f1f9.svg"
+  },
+  {
+    "code": "ZA",
+    "country": "South Africa",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1e6.svg"
+  },
+  {
+    "code": "ZM",
+    "country": "Zambia",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1f2.svg"
+  },
+  {
+    "code": "ZW",
+    "country": "Zimbabwe",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1fc.svg"
+  },
+  {
+    "code": "UK",
+    "country": "England",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.svg"
+  },
+  {
+    "code": "UK",
+    "country": "Scotland",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.svg"
+  },
+  {
+    "code": "UK",
+    "country": "Wales",
+    "flag": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.svg"
+  }
+]

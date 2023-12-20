@@ -1,11 +1,11 @@
-import React, { createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect } from 'react'
 
 import { useOnClickOutside } from '@hooks/utils/useClickOutside'
 
 interface ITabContext {
   activeTab: string
   autoDismiss: boolean
-  setActiveTab: (id: string) => void
+  onTabChange: (id: string) => void
 }
 
 const TabContext = createContext<ITabContext | undefined>(undefined)
@@ -19,21 +19,20 @@ const useTabContext = () => {
 }
 
 interface TabPaneProps extends React.HTMLAttributes<HTMLDivElement> {
-  onTabChanged?: (id: string) => void | Promise<void>
+  activeTab?: string
+  onTabChange: (id: string) => void | Promise<void>
   autoDismiss?: boolean
   children: React.ReactNode
 }
 
-export const TabPane = ({ autoDismiss = false, onTabChanged, children, ...props }: TabPaneProps) => {
-  const [activeTab, setActiveTab] = useState('')
-
+export const TabPane = ({ activeTab = '', onTabChange, children, autoDismiss = false, ...props }: TabPaneProps) => {
   useEffect(() => {
-    onTabChanged?.(activeTab)
-  }, [activeTab, onTabChanged])
+    onTabChange?.(activeTab)
+  }, [activeTab, onTabChange])
 
   return (
     <div {...props}>
-      <TabContext.Provider value={{ activeTab, setActiveTab, autoDismiss }}>{children}</TabContext.Provider>
+      <TabContext.Provider value={{ activeTab, onTabChange, autoDismiss }}>{children}</TabContext.Provider>
     </div>
   )
 }
@@ -45,10 +44,10 @@ interface TabProps extends React.HTMLAttributes<HTMLAnchorElement> {
 }
 
 export const Tab = ({ target, children, onClick, ...props }: TabProps) => {
-  const { setActiveTab } = useTabContext()
+  const { onTabChange } = useTabContext()
 
   const handleClick = () => {
-    setActiveTab(target)
+    onTabChange(target)
     onClick?.()
   }
 
@@ -66,11 +65,11 @@ interface PaneProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const Pane = ({ id, children, ...props }: PaneProps) => {
   const paneNode = React.useRef<any>()
-  const { activeTab, setActiveTab, autoDismiss } = useTabContext()
+  const { activeTab, onTabChange, autoDismiss } = useTabContext()
 
   useOnClickOutside(paneNode, () => {
     if (autoDismiss) {
-      setActiveTab('')
+      onTabChange('')
     }
   })
 
